@@ -15,14 +15,21 @@ This big data project will look at Hive's capabilities to run analytical queries
 datasets. We will use the Adventure works dataset in a MySQL dataset for this project,
 and we'll need to ingest and modify the data. We'll use Adventure works sales and
 Customer demographics data to perform analysis and answer the following questions:
+
 ● Which age group of customers contribute to more sales?
+
 ● To find the upper and lower discount limits offered for any product
+
 ● Sales contributions by customer
+
 ● To Understand customer persona purchasing pattern based on gender, education
 and yearly income
+
 ● To find the sales contribution by customers on the overall year to date sales
 belong to categorized by same gender, yearly income.
+
 ● To identify the top performing territory based on sales
+
 ● To find the territory-wise sales and their adherence to the defined sales quota.
 
 ## Aim
@@ -34,7 +41,9 @@ be only using Customer test, Individual test, Credit card, Sales order details, 
 Sales territory, Salesperson, Sales order header, Special offer tables from this
 database.
 ## Tech Stack
+
 ➔ Language: SQL, Python
+
 ➔ Services: AWS EC2, Docker, MySQL, Sqoop, Hive, HDFS, Spark
 
 ### AWS EC2
@@ -67,32 +76,50 @@ query large datasets with a SQL-like interface utilizing Apache Tez or MapReduce
 
 ## Approach
 ● Create an AWS EC2 instance and launch it.
+
 ● Create docker images using docker-compose file on EC2 machine via ssh.
+
 ● Create tables in MySQL.
+
 ● Load data from MySQL into HDFS storage using Sqoop commands.
+
 ● Move data from HDFS to Hive.
+
 ● Integrate Hive into Spark.
-● Using scala programming language, extract Customer demographics information
-from data and store it as parquet files.
-● Move parquet files from Spark to Hive.
-● Create tables in Hive and load data from Parquet files into tables.
+
+● Using python programming language, extract Customer demographics information
+from data and senting it to hive through pyspark.
+
+● Create tables in Hive and load data in proper data format in hive.
+
 ● Perform Hive analytics on Sales and Customer demographics data.
 
 ## Project Takeaways
 ● Understanding various services provided by AWS
+
 ● Creating an AWS EC2 instance
+
 ● Connecting to an AWS EC2 instance via SSH
+
 ● Introduction to Docker
+
 ● Visualizing the complete Architecture of the system
+
 ● Usage of docker-composer and starting all tools
+
 ● Copying a file from a local machine to an EC2 machine
+
 ● Understanding the schema of the dataset
+
 ● Data ingestion/transformation using Sqoop, Spark, and Hive
+
 ● Moving the data from MySQL to HDFS
+
 ● Creating Hive table and troubleshooting it
-● Using Parquet and Xpath to access schema
+
 ● Understanding the use of GROUP BY, GROUPING SETS, ROLL-UP, CUBE
 clauses
+
 ● Understanding different analytic functions in Hive
 
 
