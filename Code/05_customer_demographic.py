@@ -5,7 +5,7 @@ import pyspark.sql.functions as f
 import xml.etree.ElementTree as ET
 
 if __name__ == '__main__':
-    spark = SparkSession.builder.appName("explode functions")\
+    spark = SparkSession.builder.appName("Customer Demographics extraction")\
         .master("local[*]") \
         .enableHiveSupport() \
         .getOrCreate()
