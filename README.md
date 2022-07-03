@@ -1,6 +1,6 @@
 # Ecommerce-data-warehouse-in-HIVE-using-AWS
  
- 
+ ![3c8e424d-796d-47eb-87e3-b14924de386c](https://user-images.githubusercontent.com/107996635/177051393-9bd53fcd-bfad-4fa5-9156-d9ebf2e9b929.jpg)
  
  
 ## Agenda
